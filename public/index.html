@@ -1,0 +1,38 @@
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <title>tasktracker</title>
+
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/tether/tether.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-ui-router/angular-ui-router.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+</head>
+
+<body>
+    <main-nav></main-nav>
+    <br>
+    <div class="container">
+        <ui-view></ui-view>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+<!-- add root module -->
+<script src="modules/root/router.js"></script>
+<script src="modules/root/directive_nav.js"></script>
+
+<!-- add emp module -->
+<script src="modules/emp/router.js"></script>
+<script src="modules/emp/ctl_emp.js"></script>
+
+
+</html>

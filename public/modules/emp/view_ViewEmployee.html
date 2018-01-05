@@ -1,0 +1,26 @@
+<div>
+    <h2 class="head" style="color:rgb(113, 156, 161)">Employee Details</h2>
+    <hr>
+</div>
+<table class="table table-striped" ng-if="employees">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Salary</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="emp in employees">
+        <tr>
+            <th>{{emp.empName}}</th>
+            <td>{{emp.empCompany}}</td>
+            <td>{{emp.empSalary}}</td>
+            <td>{{emp.empAddress}}</td>
+            <td>
+                <i class="fas fa-thrash"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>
